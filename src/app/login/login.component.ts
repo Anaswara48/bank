@@ -23,9 +23,39 @@ psw:any
 
   }
   
-  login(){
-    var acnum=this.acno
-    var psw=this.psw
+//   login(){
+//     var acnum=this.acno
+//     var psw=this.psw
+//     var userDetails=this.userDetails
+// if (acnum in userDetails){
+//   if(psw==userDetails[acnum]["password"]){
+//     alert('login success')
+
+//   }
+//   else{
+//     alert('incorrect password')
+//   }
+// }
+// else{
+//   alert('incorrect acnum')
+// }
+//     // alert("login-worked")
+//   }
+  
+  // acnoChange(event:any){
+  //   this.acno=event.target.value;
+  //   // console.log(this.acno);
+    
+  // }
+  // pswChange(event:any){
+  //  this.psw= event.target.value
+  //  console.log(this.psw);
+   
+  // }
+
+  login(acnum:any,psw:any){
+    var acnum=acnum.value
+    var psw=psw.value
     var userDetails=this.userDetails
 if (acnum in userDetails){
   if(psw==userDetails[acnum]["password"]){
@@ -40,17 +70,6 @@ else{
   alert('incorrect acnum')
 }
     // alert("login-worked")
-  }
-  
-  acnoChange(event:any){
-    this.acno=event.target.value;
-    // console.log(this.acno);
-    
-  }
-  pswChange(event:any){
-   this.psw= event.target.value
-   console.log(this.psw);
-   
   }
   
   }

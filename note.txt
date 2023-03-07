@@ -76,3 +76,4 @@ html -view
     ---------------------------------
     1.2.1 Event Binding   (eventname)="method()"
     1.2.2 $Event Binding  (eventname)="method($event)"
+    1.2.3 event binding with template rendering variable #variableName

@@ -5,13 +5,13 @@
         <h2 class="text-center" style="color:rgb(226, 219, 220);">SIGN IN</h2>
         <form class=" w-50 container p-3 mt-2" action="">
             <div class="p-3 mt-2">
-                <input (change)="acnoChange($event)" type="text" id="ul"  class="form-control" [placeholder]="data1">
+                <input #acno  type="text" name="uname" id="ul"  class="form-control" [placeholder]="data1">
             </div>
             <div class="p-3 mt-2">
-                <input (change)="pswChange($event)" type="password" id="p1" class="form-control" placeholder="Enter password">
+                <input #psw type="password" name="password" id="p1" class="form-control" placeholder="Enter password">
             </div>
             <div class="p-3 mt-1 text-center">
-                <button (click)="login()" class="btn btn-dark" style="color: rgb(241, 235, 235);">login</button>
+                <button (click)="login(acno,psw)" class="btn btn-dark" style="color: rgb(241, 235, 235);">login</button>
             </div>
         </form>
     </div>
